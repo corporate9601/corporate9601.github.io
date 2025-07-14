@@ -1,0 +1,92 @@
+[
+  {
+    "filename": "artwork1.jpg",
+    "title": "Whimsical Contemporary Human Form",
+    "description": "This thought-provoking sculpture showcases the artist's unique perspective on natural beauty. Created using innovative techniques.",
+    "category": "drawing",
+    "year": 2019,
+    "dimensions": "14\u00d730 in",
+    "medium": "Charcoal"
+  },
+  {
+    "filename": "artwork10.jpg",
+    "title": "Timeless Expressionist Wildlife",
+    "description": "This expressive photography showcases the artist's unique perspective on emotional depth. Created using experimental techniques.",
+    "category": "drawing",
+    "year": 2020,
+    "dimensions": "16\u00d717 in",
+    "medium": "Acrylic"
+  },
+  {
+    "filename": "artwork2.jpg",
+    "title": "Bold Realist Memory",
+    "description": "This captivating photography showcases the artist's unique perspective on contemporary issues. Created using experimental techniques.",
+    "category": "drawing",
+    "year": 2021,
+    "dimensions": "38\u00d736 in",
+    "medium": "Acrylic"
+  },
+  {
+    "filename": "artwork3.jpg",
+    "title": "Luminous Contemporary Human Form",
+    "description": "This beautiful drawing showcases the artist's unique perspective on natural beauty. Created using traditional techniques.",
+    "category": "mixed-media",
+    "year": 2023,
+    "dimensions": "47\u00d733 in",
+    "medium": "Charcoal"
+  },
+  {
+    "filename": "artwork4.jpg",
+    "title": "Whimsical Minimalist Emotions",
+    "description": "This captivating drawing showcases the artist's unique perspective on emotional depth. Created using innovative techniques.",
+    "category": "sculpture",
+    "year": 2020,
+    "dimensions": "17\u00d714 in",
+    "medium": "Charcoal"
+  },
+  {
+    "filename": "artwork5.jpg",
+    "title": "Dynamic Expressionist Memory",
+    "description": "This beautiful drawing showcases the artist's unique perspective on natural beauty. Created using innovative techniques.",
+    "category": "painting",
+    "year": 2021,
+    "dimensions": "25\u00d717 in",
+    "medium": "Digital"
+  },
+  {
+    "filename": "artwork6.jpg",
+    "title": "Evocative Minimalist Emotions",
+    "description": "This beautiful painting showcases the artist's unique perspective on contemporary issues. Created using traditional techniques.",
+    "category": "photography",
+    "year": 2018,
+    "dimensions": "47\u00d720 in",
+    "medium": "Pastel"
+  },
+  {
+    "filename": "artwork7.jpg",
+    "title": "Bold Abstract Human Form",
+    "description": "This beautiful digital showcases the artist's unique perspective on emotional depth. Created using experimental techniques.",
+    "category": "painting",
+    "year": 2020,
+    "dimensions": "15\u00d718 in",
+    "medium": "Charcoal"
+  },
+  {
+    "filename": "artwork8.jpg",
+    "title": "Mystical Contemporary Relationships",
+    "description": "This thought-provoking mixed-media showcases the artist's unique perspective on natural beauty. Created using traditional techniques.",
+    "category": "sculpture",
+    "year": 2022,
+    "dimensions": "28\u00d714 in",
+    "medium": "Acrylic"
+  },
+  {
+    "filename": "artwork9.jpg",
+    "title": "Bold Surreal Human Form",
+    "description": "This captivating drawing showcases the artist's unique perspective on contemporary issues. Created using traditional techniques.",
+    "category": "digital",
+    "year": 2019,
+    "dimensions": "14\u00d712 in",
+    "medium": "Acrylic"
+  }
+]

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alison Williams' Art Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-palette me-2"></i>Alison Williams' Art Gallery
+            </a>
+            <div class="d-flex">
+                <button id="refresh-btn" class="btn btn-outline-light">
+                    <i class="fas fa-sync-alt me-1"></i> Refresh
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center py-5">
+        <div class="container py-5">
+            <h1 class="display-3 fw-bold mb-3">Art Collection</h1>
+            <p class="lead mb-4">Showcasing beautiful artwork created with passion and creativity by artist Alison Williams</p>
+            <a href="#gallery" class="btn btn-primary btn-lg px-4">
+                <i class="fas fa-images me-2"></i>View Gallery
+            </a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-container py-5" id="gallery">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-3">Artwork Collection</h2>
+                <p class="lead text-muted">Click on any artwork to view it in full size</p>
+            </div>
+            
+            <div class="text-center mb-4">
+                <div class="btn-group" role="group">
+                    <button class="btn btn-outline-primary active" data-filter="all">All</button>
+                    <button class="btn btn-outline-primary" data-filter="painting">Paintings</button>
+                    <button class="btn btn-outline-primary" data-filter="drawing">Drawings</button>
+                    <button class="btn btn-outline-primary" data-filter="digital">Digital</button>
+                </div>
+            </div>
+            
+            <div class="row" id="gallery-container"></div>
+            
+            <div class="text-center mt-4">
+                <div class="spinner-border text-primary" id="loader"></div>
+                <p id="status" class="text-muted mt-2">Loading artworks...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="close-btn">&times;</button>
+            <div class="lightbox-nav">
+                <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <img id="lightbox-img" src="" alt="Enlarged view">
+                <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="lightbox-info">
+                <h3 id="image-title">Artwork Title</h3>
+                <p id="image-description">Description of the artwork</p>
+                <div class="image-counter" id="image-counter"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="display-5 fw-bold mb-4">About the Artist</h2>
+                    <p class="lead">I create art that captures the beauty of everyday life and the wonder of imagination.</p>
+                    <p>My work is inspired by nature, emotions, and the connections between people and their environment. Each piece is created with care and attention to detail.</p>
+                    <div class="mt-4">
+                        <button class="btn btn-outline-dark me-2">
+                            <i class="fas fa-envelope me-1"></i> Contact Alison Williams
+                        </button>
+                        <button class="btn btn-outline-dark">
+                            <i class="fas fa-book me-1"></i> View Portfolio
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="about-image mx-auto">
+                        <div class="position-relative">
+                            <div class="paint-brush"></div>
+                            <div class="paint-palette"></div>
+                            <img src="profile-picture.jpg" 
+                                 alt="Artist" class="img-fluid rounded-circle shadow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3 class="mb-3"><i class="fas fa-palette me-2"></i>Mom's Art Gallery</h3>
+                    <p class="text-white-50">Showcasing beautiful artwork created with passion and creativity.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="mb-3">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#gallery" class="text-white-50">Gallery</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">About the Artist</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Commissions</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Shop</a></li>
+                        <li><a href="#" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="mb-3">Newsletter</h4>
+                    <p class="text-white-50">Subscribe to get updates on new artwork and exhibitions.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email address">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 Mom's Art Gallery. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Created with ❤️ for the world to enjoy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Artwork Metadata - Generated by Python Script -->
+    <script id="artwork-data" type="application/json">
+        [
+        {
+            "filename": "artwork1.jpg",
+            "title": "Whimsical Contemporary Human Form",
+            "description": "This thought-provoking sculpture showcases the artist's unique perspective on natural beauty. Created using innovative techniques.",
+            "category": "drawing",
+            "year": 2019,
+            "dimensions": "14\u00d730 in",
+            "medium": "Charcoal"
+        },
+        {
+            "filename": "artwork10.jpg",
+            "title": "Timeless Expressionist Wildlife",
+            "description": "This expressive photography showcases the artist's unique perspective on emotional depth. Created using experimental techniques.",
+            "category": "drawing",
+            "year": 2020,
+            "dimensions": "16\u00d717 in",
+            "medium": "Acrylic"
+        },
+        {
+            "filename": "artwork2.jpg",
+            "title": "Bold Realist Memory",
+            "description": "This captivating photography showcases the artist's unique perspective on contemporary issues. Created using experimental techniques.",
+            "category": "drawing",
+            "year": 2021,
+            "dimensions": "38\u00d736 in",
+            "medium": "Acrylic"
+        },
+        {
+            "filename": "artwork3.jpg",
+            "title": "Luminous Contemporary Human Form",
+            "description": "This beautiful drawing showcases the artist's unique perspective on natural beauty. Created using traditional techniques.",
+            "category": "mixed-media",
+            "year": 2023,
+            "dimensions": "47\u00d733 in",
+            "medium": "Charcoal"
+        },
+        {
+            "filename": "artwork4.jpg",
+            "title": "Whimsical Minimalist Emotions",
+            "description": "This captivating drawing showcases the artist's unique perspective on emotional depth. Created using innovative techniques.",
+            "category": "sculpture",
+            "year": 2020,
+            "dimensions": "17\u00d714 in",
+            "medium": "Charcoal"
+        },
+        {
+            "filename": "artwork5.jpg",
+            "title": "Dynamic Expressionist Memory",
+            "description": "This beautiful drawing showcases the artist's unique perspective on natural beauty. Created using innovative techniques.",
+            "category": "painting",
+            "year": 2021,
+            "dimensions": "25\u00d717 in",
+            "medium": "Digital"
+        },
+        {
+            "filename": "artwork6.jpg",
+            "title": "Evocative Minimalist Emotions",
+            "description": "This beautiful painting showcases the artist's unique perspective on contemporary issues. Created using traditional techniques.",
+            "category": "photography",
+            "year": 2018,
+            "dimensions": "47\u00d720 in",
+            "medium": "Pastel"
+        },
+        {
+            "filename": "artwork7.jpg",
+            "title": "Bold Abstract Human Form",
+            "description": "This beautiful digital showcases the artist's unique perspective on emotional depth. Created using experimental techniques.",
+            "category": "painting",
+            "year": 2020,
+            "dimensions": "15\u00d718 in",
+            "medium": "Charcoal"
+        },
+        {
+            "filename": "artwork8.jpg",
+            "title": "Mystical Contemporary Relationships",
+            "description": "This thought-provoking mixed-media showcases the artist's unique perspective on natural beauty. Created using traditional techniques.",
+            "category": "sculpture",
+            "year": 2022,
+            "dimensions": "28\u00d714 in",
+            "medium": "Acrylic"
+        },
+        {
+            "filename": "artwork9.jpg",
+            "title": "Bold Surreal Human Form",
+            "description": "This captivating drawing showcases the artist's unique perspective on contemporary issues. Created using traditional techniques.",
+            "category": "digital",
+            "year": 2019,
+            "dimensions": "14\u00d712 in",
+            "medium": "Acrylic"
+        }
+        ]
+    </script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+        
+</script>
+
+
+</body>
+</html>
